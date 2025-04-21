@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Ufq-bI-GvM" customClass="TableHeaderSearchView" customModule="CarCatalogue" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1IX-BV-WDY">
+                    <rect key="frame" x="0.0" y="0.0" width="288" height="60"/>
+                    <subviews>
+                        <searchBar clipsSubviews="YES" contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="Search car here" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylm-v0-Ixh">
+                            <rect key="frame" x="20" y="10" width="248" height="40"/>
+                            <color key="backgroundColor" red="0.18823529410000001" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" systemColor="tintColor"/>
+                            <color key="barTintColor" systemColor="labelColor"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="delegate" destination="Ufq-bI-GvM" id="eOI-Q0-oj0"/>
+                            </connections>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.82352941180000006" green="0.90588235289999997" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ylm-v0-Ixh" secondAttribute="bottom" constant="10" id="3bL-Qh-IYz"/>
+                        <constraint firstAttribute="trailing" secondItem="ylm-v0-Ixh" secondAttribute="trailing" constant="20" id="4hL-A9-HS4"/>
+                        <constraint firstItem="ylm-v0-Ixh" firstAttribute="leading" secondItem="1IX-BV-WDY" secondAttribute="leading" constant="20" id="FL2-jm-KSZ"/>
+                        <constraint firstItem="ylm-v0-Ixh" firstAttribute="top" secondItem="1IX-BV-WDY" secondAttribute="top" constant="10" id="nBf-Zi-4KE"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="GqA-9s-ZL5"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1IX-BV-WDY" secondAttribute="bottom" id="GHD-ro-jMU"/>
+                <constraint firstItem="1IX-BV-WDY" firstAttribute="leading" secondItem="Ufq-bI-GvM" secondAttribute="leading" id="VtV-2W-FFJ"/>
+                <constraint firstItem="1IX-BV-WDY" firstAttribute="top" secondItem="Ufq-bI-GvM" secondAttribute="top" id="fSI-WS-moG"/>
+                <constraint firstAttribute="trailing" secondItem="1IX-BV-WDY" secondAttribute="trailing" id="xbE-Fv-gPd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="searchBar" destination="ylm-v0-Ixh" id="AV7-MP-9bc"/>
+            </connections>
+            <point key="canvasLocation" x="46.376811594202906" y="-82.366071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
