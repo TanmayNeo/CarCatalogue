@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Maruti Suzuki.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
