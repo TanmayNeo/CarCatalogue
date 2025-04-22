@@ -18,7 +18,9 @@ class TableHeaderSearchView: UITableViewHeaderFooterView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        searchBar.barTintColor = UIColor.black
+        
+        searchBar.barTintColor = UIColor.white
+        searchBar.backgroundColor = UIColor.white
 
         searchBar.searchTextField.textColor = UIColor.black
         searchBar.searchTextField.attributedPlaceholder = NSAttributedString(

@@ -14,7 +14,7 @@ struct StringConstants {
     static let fileName = "CarBrands"
     static let type = "json"
     static let rs = "Rs. "
-    static let searchPlaceholder = "Search Car here"
+    static let searchPlaceholder = "Search car here"
 }
 
 
