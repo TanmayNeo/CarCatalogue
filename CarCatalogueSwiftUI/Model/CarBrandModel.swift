@@ -39,20 +39,17 @@ struct CarModel: Hashable,Identifiable, Codable {
     var id: String?
     var modelName: String?
     var imageUrl: String?
-    var price: String?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case modelName = "modelName"
         case imageUrl = "imageUrl"
-        case price = "price"
     }
     
-    init(id: String, modelName: String, imageUrl: String, price: String) {
+    init(id: String, modelName: String, imageUrl: String) {
         self.id = id
         self.modelName = modelName
         self.imageUrl = imageUrl
-        self.price = imageUrl
     }
     
     init(from decoder: Decoder) throws {
@@ -60,7 +57,6 @@ struct CarModel: Hashable,Identifiable, Codable {
         self.id = try container.decodeIfPresent(String.self, forKey: .id)
         self.modelName = try container.decodeIfPresent(String.self, forKey: .modelName)
         self.imageUrl = try container.decodeIfPresent(String.self, forKey: .imageUrl)
-        self.price = try container.decodeIfPresent(String.self, forKey: .price)
     }
 }
 

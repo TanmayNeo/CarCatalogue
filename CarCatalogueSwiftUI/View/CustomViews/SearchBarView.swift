@@ -25,6 +25,8 @@ struct SearchBarView: View {
                         .onTapGesture {
                             self.isEditing = true
                         }
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
                     
                 }
                 .background(.white)

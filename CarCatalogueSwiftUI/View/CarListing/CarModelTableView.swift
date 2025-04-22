@@ -23,7 +23,7 @@ struct CarModelsTableView: View {
                         .font(FontSizeClass.largeBold)
                 } else {
                     ForEach(models) { model in
-                        CustomCellView(title: model.modelName ?? "", subtitle: model.price ?? "", image: model.imageUrl ?? "")
+                        CustomCellView(title: model.modelName ?? "", image: model.imageUrl ?? "")
                             .listRowInsets(EdgeInsets())
                             .listRowBackground(Color.clear)
                             .background(Color.clear)
@@ -42,7 +42,7 @@ struct CarModelsTableView: View {
 
 struct CarModelsTableView_Previews: PreviewProvider {
     static var previews: some View {
-        let carModel = CarModel(id: "1", modelName: Strings.carName, imageUrl: Strings.imageName, price: Strings.imageName)
+        let carModel = CarModel(id: "1", modelName: Strings.carName, imageUrl: Strings.imageName)
         CarModelsTableView(searchText: .constant(""), models: [carModel])
         
     }

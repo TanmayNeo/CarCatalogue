@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CustomCellView: View {
     let title: String
-    let subtitle: String
     let image: String
 
     var body: some View {
@@ -24,10 +23,6 @@ struct CustomCellView: View {
                     .font(FontSizeClass.extraLarge)
                     .padding(.vertical, 2.5)
                     .foregroundColor(Color.fontColor)
-                Text(Strings.rs + subtitle + Strings.lakh)
-                    .font(FontSizeClass.medium)
-                    .padding(.vertical, 2.5)
-                    .foregroundColor(Color.lightFontColor)
             }
             .padding(.horizontal, 5)
             Spacer()
@@ -44,7 +39,7 @@ struct CustomCellView: View {
 
 struct CustomCellView_Preview: PreviewProvider {
     static var previews: some View {
-        CustomCellView(title: Strings.carName, subtitle: Strings.price, image: Strings.imageName)
+        CustomCellView(title: Strings.carName, image: Strings.imageName)
 
     }
 }
